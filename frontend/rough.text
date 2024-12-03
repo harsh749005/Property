@@ -1,0 +1,70 @@
+import React from 'react'
+import { Link } from 'react-router-dom';
+import '../styles/Registration.css'
+import axios from 'axios';
+function Registration() {
+
+  const handlefrom = async (e) =>{
+    e.preventDefault();
+    const name = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    
+    try{
+      const response = await axios.post('http://localhost:5000/register',{name,email,password})
+      .then(response =>{
+        if(response.data.success){
+
+          
+          alert('Registration Successful');
+          document.getElementById('username').value = '';
+          document.getElementById('email').value = '';
+          document.getElementById('password').value = '';
+          console.log("Form submitted: ",response.data);
+          window.location.href = '/';
+        }
+        else{
+          alert(response.data.error);
+          console.error("Registration Failed: ",response.data.error);
+        }
+      })
+    }
+    catch(err){
+      console.error("Error submitting form:",err);
+    }
+
+    
+  }
+
+  return (
+    <div>
+         <div className="root">
+      <div className="form-holder">
+        <form onSubmit={handlefrom}>
+          <h1>Registration</h1>
+          <div className="input-group">
+           
+            <input placeholder="Name" type="text" id="username" name="username" required />
+          </div>
+          <div className="input-group">
+           
+            <input placeholder="Email" type="email" id="email" name="email" required />
+          </div>
+          <div className="input-group">
+           
+            <input placeholder="Password" type="password" id="password" name="password" required />
+          </div>
+          <button id='btn'  type='submit '>Register</button>
+        </form>
+       
+        <div className="signIn">
+          <p>Already have an account? <Link to="/login">Login</Link></p>
+        </div>
+      
+      </div>
+    </div>
+    </div>
+  )
+}
+
+export default Registration

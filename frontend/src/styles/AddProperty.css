@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+}
+#root{
+    height: max-content;
+    background-color: #f7ffef;
+}
+.property-product-holder{
+
+    margin: 50px auto;
+    width: 90vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7ffef;
+    border : 2px solid #4CAF50;
+    border-radius: 20px;
+}
+.property-product-holder > .property-property-form{
+    width: 900px;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+    background-color: #f7ffef;
+    margin-top: 80px;
+    
+}
+
+.property-left {
+    width: 550px;
+    height: 350px;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px dashed #4CAF50;
+    border-radius: 20px;
+    padding: 10px;
+}
+.property-left img {
+    border: none !important;
+    width: 100%;
+    height:100%;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+.input-group {
+    margin: 10px 0;
+}
+/* Hide the file input */
+#file-input {
+    display: none;
+}
+/* Hide the file input */
+#file-input {
+    display: none;
+}
+.right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.right > .input-group > input{
+    border: 2px solid #4CAF50;
+    border-radius: 20px;
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+    padding: 20px;
+}
+.right > button {
+    width: 160px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid #1a831a;
+    text-align: center;
+    font-size: 15px;
+    color: #f7ffef ;
+    font-weight: 600;
+    background-color:#4CAF50 ;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.right > button:hover{
+    transition: .5s;
+    cursor: pointer;
+    color: #1a831a;
+    background-color: #f7ffef;
+    font-weight: 600;
+}
+.right > .input-group > select {
+    width: 250px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid #1a831a;
+    text-align: center;
+    font-size: 16px;
+    color: #f7ffef;
+    font-weight: 600;
+    background-color: #4CAF50;
+    text-transform: uppercase;
+    appearance: none; /* Hides the default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+}
+
+.right > .input-group > select:hover {
+    transition: .5s;
+    cursor: pointer;
+    color: #f7ffef;
+    /* background-color: #1a831a; */
+    font-weight: 600;
+}   
+
+.right >.input-group > select option[value="house"] {
+    color: #f7ffef; /* House Green */
+}
+
+.right >.input-group > select option[value="apartment"] {
+    color: #f7ffef; /* Apartment Blue */
+}
+
+.right >.input-group > select option[value="commercial"] {
+    color: #f7ffef; /* Commercial Yellow */
+}
+.right >.input-group > select option[value="house"]:hover{
+    background-color: #1a831a;
+    color: #f7ffef;
+}
+
+
+ .date-holder > input[type="date"] {
+    width: 160px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid #1a831a;
+    text-align: center;
+    font-size: 16px;
+    color: #f7ffef;
+    font-weight: 600;
+    background-color: #4CAF50;
+    text-transform: uppercase;
+    appearance: none; /* For the select dropdown */
+}
+
+.date-holder > select:hover, .right > input[type="date"]:hover {
+    transition: .5s;
+    cursor: pointer;
+    color: #1a831a;
+    background-color: #f7ffef;
+    font-weight: 600;
+}
+
+
+
+
+
+.backhome{
+    text-decoration: none !important;
+    width: 160px;
+    height: 40px;
+    padding-top: 10px;
+    border-radius: 50px;
+    border: 2px solid #1a831a;
+    text-align: center;
+    font-size: 16px;
+    color: #1a831a;
+    font-weight: 600;
+}
+
+.backhome:hover{
+    transition: .5s;
+    cursor: pointer;
+    color:  #f7ffef;
+    background-color: #4CAF50;
+    font-weight: 600;
+}
+
+ .adpheading{
+    color: #1a831a;
+    text-transform: uppercase;
+}

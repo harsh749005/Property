@@ -1,0 +1,99 @@
+h1{
+   text-align: center;
+   font-weight: 600;
+   color: #1a831a;
+   margin-top: 10px;
+}
+
+.content-3{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.card-1{
+    width: 300px;
+    height: 440px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 15px;
+    border: 1px solid #1a831a;
+    padding: 10px;
+}
+.card-1:hover{
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+    
+}
+.card-1 > .cardimage-holder{
+    width: 100%;
+    height: 240px;
+}
+.card-1 > .cardimage-holder > img{
+    border-radius: 0px;
+    object-fit: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.card-holder {
+    display: flex;
+    flex-wrap: wrap;
+}
+.property-details{
+    width: 100%;
+    padding: 5px;
+    height: max-content;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    /* background-color: #9ae59a; */
+}
+.property-details > .pname{
+    font-weight: 600;
+    font-size: 16px;
+}
+.property-details > .ptype{
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: white ;
+    width: max-content;
+    border-radius: 5px;
+    background-color: #4CAF50;
+}
+.property-details >.ppurchase{
+    font-weight: 500;
+    font-size: 14px;
+    
+    padding: 5px 10px;
+    color: white ;
+    width: max-content;
+    border-radius: 5px;
+    background-color: #4CAF50;
+}
+.property-details > .paddress{
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: white ;
+    width: max-content;
+    border-radius: 5px;
+    background-color: #4CAF50;
+}
+.property-details >.pservice{
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px 10px;
+    color:  #4CAF50;
+    width: max-content;
+    border-radius: 5px;
+    text-decoration: none !important;
+    border:1px solid #4CAF50;
+}
+.property-details > .pservice:hover{
+    transition: .5s;
+    color: white; 
+    background-color: #4CAF50;
+    cursor: pointer;
+}

@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+}
+.root{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f7ffef;
+    position: relative;
+}
+.form-holder{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color:  #f7ffef;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.form-holder > form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+   
+}
+.form-holder > form > .input-group > input[type="text"],input[type="password"],input[type="email"]{
+    border: 2px solid #4CAF50;
+    border-radius: 20px;
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+}
+.form-holder > form > .input-group > input[type="text"]:focus{
+    border-color: #1a831a;
+    outline: none;
+}
+.form-holder > form > .input-group > input[type="password"]:focus{
+    border-color: #1a831a;
+    outline: none;
+}
+.form-holder > form > .input-group > input[type="email"]:focus{
+    border-color: #1a831a;
+    outline: none;
+}
+.form-holder > form > button{
+    width: 400px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid #1a831a;
+    text-align: center;
+    font-size: 16px;
+    color: #f7ffef ;
+    background-color:#4CAF50 ;
+}
+
+.form-holder > form > button:hover{
+    transition: .5s;
+    cursor: pointer;
+    color: #1a831a;
+    background-color: #f7ffef;
+}
+.form-holder > .signIn > p > a{
+    color: #1a831a;
+    text-decoration: none ;
+}
